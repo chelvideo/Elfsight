@@ -1,0 +1,78 @@
+.modal {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    visibility: hidden;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    backdrop-filter: blur(2px);
+    opacity: 0;
+    transition: opacity 0.2s ease 0s;
+}
+
+.modal--active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal__background {
+    width: 30%;
+    height: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 10px 10px 45px 13px rgba(0,0,0,0.5);
+}
+
+.modal__title {
+    width: 96%;
+    margin: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.photos_list {
+    height: 100%;
+    overflow-y: scroll;
+    display: initial;
+}
+
+.photos_list--active {
+    display: none;
+}
+
+.photo:hover {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+
+.close__btn:hover {
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.photo_detail {
+    display: none;
+    margin: auto;
+}
+
+.photo_title {
+    text-align: center;
+}
+
+.photo_detail--active {
+    display: initial;
+}
+
+.photo_img:hover {
+    cursor: pointer;
+}
